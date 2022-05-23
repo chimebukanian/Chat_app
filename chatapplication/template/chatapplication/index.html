@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+</head>
+<body>
+    <div class="container">
+        <h4>enter a chatroom</h4>
+        <input id="roomname" type="text" size="100"><br><br>
+        <input id="submit" type="button" value="Enter">
+    </div>
+
+    <script>
+        document.querySelector(('#submit').onclick=function(){
+            var dm = document.querySelector('#dm').value;
+            window.location.pathname='chats/'+  dm + '/';
+        };
+    </script>
+</body>
+</html>
